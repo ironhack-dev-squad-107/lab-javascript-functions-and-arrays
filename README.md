@@ -10,7 +10,7 @@ In this exercise you will apply:
 - Using functions to manipulate and transform arrays
 
 
-## Introduction 
+## Introduction
 
 Manipulating arrays in code is a very common operation. Whether you're creating a total for a shopping cart, grabbing only the first names out of a list of people, or moving a piece on a chessboard, you're probably going to be modifying or manipulating an array in some way.
 
@@ -20,7 +20,7 @@ Let's put this into practice. Use [https://repl.it/](https://repl.it/) to comple
 
 Define a function `maxOfTwoNumbers` that takes two numbers as arguments and returns the largest.
 
-**Starter Code** 
+**Starter Code**
 
 ```javascript
 function maxOfTwoNumbers(first, second){
@@ -51,6 +51,7 @@ var words = [
 
 var longest = findLongestWord(words);
 console.log(longest);
+// crocodile
 ```
 
 ## Calculating a Sum
@@ -72,10 +73,9 @@ function sumArray(array){
 // Your Code here
 }
 
-var total = sumArray(array);
+var total = sumArray(numbers);
+// 87
 ```
-
-The result should be: **87**.
 
 ## Calculate the Average
 
@@ -106,7 +106,6 @@ var average = averageNumbers(numbers);
 console.log(average);
 // 6
 ```
-The result should be **6**.
 
 ### Level 2: Array of Strings
 
@@ -136,10 +135,8 @@ function averageWordLength(array){
 
 var averageLength = averageNumbers(words);
 console.log(averageLength);
-// 5
+// 5.3
 ```
-
-The result should be **5**.
 
 ## Unique Arrays
 
@@ -166,14 +163,16 @@ var words = [
   "communion",
   "simple",
   "bring"
-]; 
+];
 
 var uniqued = uniquifyArray(words);
+console.log(uniqued);
+// ["crab", "poison", "contagious", "simple", "bring", "sharp", "playground", "communion"]
 ```
 
 ## Finding Elements
 
-Let's create a simple array search
+Let's create a simple array search.
 
 Write a function that will take in an array of words as one argument, and a word to search for as the other. Return `true` if it exists, otherwise return `false`. **Don't** use `indexOf` for this one. :)
 
@@ -195,8 +194,8 @@ var hasMatter = doesWordExist(words, "matter");
 console.log(hasMatter);
 // true
 
-var doesntExist = doesWordExist(words, "dog");
-console.log(doesntExist);
+var hasDog = doesWordExist(words, "dog");
+console.log(hasDog);
 // false
 ```
 
@@ -218,15 +217,15 @@ var words = [
   "matter",
   "truth",
   "disobedience"
-  "matter",
+  "matter"
 ];
 
-var hasMatter = howManyTimes(words, "matter");
-console.log(hasMatter);
+var howManyMatter = howManyTimes(words, "matter");
+console.log(howManyMatter);
 // 4
 
-var doesntExist = howManyTimes(words, "dog");
-console.log(doesntExist);
+var howManyDog = howManyTimes(words, "dog");
+console.log(howManyDog);
 // 0
 ```
 
@@ -260,5 +259,5 @@ var matrix = [
 
 var maxProduct = greatestProduct(matrix);
 console.log(maxProduct);
-// => 51,267,216
+// => 57,148,146
 ```
