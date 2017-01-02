@@ -16,6 +16,12 @@ Manipulating arrays in code is a very common operation. Whether you're creating 
 
 Let's put this into practice. Use [https://repl.it/](https://repl.it/) to complete the following exercises with your partner.
 
+## Requirements
+
+- [Fork this repo](https://guides.github.com/activities/forking/)
+- Clone this repo into your `~/code/labs`
+- Write your code in the js file provided in the `starter-code`
+
 ## Submission
 
 Upon completion, run the following commands
