@@ -1,6 +1,6 @@
 ![](https://i.imgur.com/1QgrNNw.png)
 
-# Pair Programming | Functions & Arrays
+# JS | Functions & Arrays
 
 ## Learning Goals
 
