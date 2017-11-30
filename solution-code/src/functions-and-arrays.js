@@ -180,21 +180,28 @@ var howManyDog = howManyTimes(wordsCount, 'dog');
 console.log(howManyDog);
 
 // Bonus Quest
-function greatestProduct(matrix) {
+function greatestProduct(m) {
+  var horizontal, vertical, diagonal;
   var greatProduct = 0;
 
-  for (var i = 0; i < matrix.length; i++) {
-    for (var j = 0; j < matrix[i].length; j++) {
-      var top    = i > 0 ? matrix[i - 1][j] : matrix[matrix.length - 1][j];
-      var bottom = i < matrix.length - 1 ? matrix[i + 1][j] : matrix[0][j];
-      var left   = j > 0 ? matrix[i][j - 1] : matrix[i][matrix.length - 1];
-      var right  = j < matrix.length - 1 ? matrix[i][j + 1] : matrix[i][0];
-
-      var result = top * bottom * left * right;
-
-      if (result > greatProduct) {
-        greatProduct = result;
+  for (var i=0, nRows = m.length; i < nRows - 1; i++) {
+    for (var j=0, nCols = m[0].length; j < nCols - 1; j++) {
+      // 4 horizontal elements
+      if (j < nCols-3) {
+        horizontal = m[i][j] * m[i][j+1]   * m[i][j+2]   * m[i][j+3];
       }
+
+      // 4 vertical elements
+      if (i < nRows-3) {
+        vertical   = m[i][j] * m[i+1][j]   * m[i+2][j]   * m[i+3][j];
+      }
+
+      // 4 Diagonal elements
+      if (i < nRows-3 && j < nCols-3) {
+        diagonal   = m[i][j] * m[i+1][j+1] * m[i+2][j+2] * m[i+3][j+3];
+      }
+
+      greatProduct = Math.max(greatProduct, horizontal, vertical, diagonal);
     }
   }
 

@@ -6,12 +6,13 @@
 
 In this exercise you will apply:
 
+- Conditional logic
 - Array iteration techniques
 - Using functions to manipulate and transform arrays
 
 ## Introduction
 
-Manipulating arrays in code is a very common operation. Whether you're creating a total for a shopping cart, grabbing only the first names out of a list of people, or moving a piece on a chessboard, you're probably going to be modifying or manipulating an array in some way.
+Manipulating arrays with code is a very common operation. Whether you're calculating the total for a user's shopping cart, grabbing the last names out of a list of clients, or moving a piece on a chessboard, you're probably going to be modifying or manipulating an array in some way.
 
 ## Requirements
 
@@ -21,15 +22,23 @@ Manipulating arrays in code is a very common operation. Whether you're creating 
 
 ## Submission
 
-Upon completion, run the following commands
+Upon completion, run the following commands:
+
 ```
 $ git add .
 $ git commit -m 'done'
 $ git push origin master
 ```
+
 Navigate to your repo and create a Pull Request -from your master branch to the original repository master branch.
 
-In the Pull request name, add your name and last names separated by a dash '-'
+Use the following format for the Pull request description:
+
+> `CampusCode`-`firstName`-`lastName`
+
+For example:
+
+> `BCN`-`Sarah`-`Connor`
 
 ## Testing Introduction
 
@@ -77,23 +86,25 @@ Run the tests with Jasmine is super easy, you just have to open the `SpecRunner.
 
 **Pass the tests**
 
-You have to write your code on the `src/functions-and-arrays.js` file. Following the instructions, you should go step by step passing all the tests. 
+You have to write your code on the `src/functions-and-arrays.js` file. Following the instructions, you should go step by step passing all the tests.
 
-Do not rush to go through all of them at once, take your time to read carefully about what the iteration is asking you, and solve the errors one by one. 
+Do not rush to go through all of them at once, take your time to read carefully about what the iteration is asking you, and solve the errors one by one.
 
 When coding with tests, is super important to read and understand the errors we are having for each test, this way we will know what it expect from your code.
 
 ## Deliverables
 
-All our work will be located in the `functions-and-arrays.js` file, so that will be enough. Anyway, you have to `push` the whole repo to Github.
+You should submit a working `functions-and-arrays.js` file that passes all the tests in the lab.
 
-## Find the maximum
+## Iterations
 
-Define a function `maxOfTwoNumbers` that takes two numbers as arguments and returns the largest. 
+### 1. Find the maximum
 
-## Finding Longest Word
+Define a function `maxOfTwoNumbers` that takes two numbers as arguments and returns the largest.
 
-Write a function `findLongestWord` that takes an array of words and returns the length of the longest one. If there are 2 with the same length, it should return the first occurrence. 
+### 2. Finding Longest Word
+
+Write a function `findLongestWord` that takes an array of words and returns the length of the longest one. If there are 2 with the same length, it should return the first occurrence.
 
 **Starter Code**
 
@@ -109,7 +120,7 @@ var words = [
 ];
 ```
 
-## Calculating a Sum
+### 3. Calculating a Sum
 
 Calculating a sum is as simple as iterating over an array and adding each of the elements together.
 
@@ -123,7 +134,7 @@ Create a `sumArray` function that takes an array of numbers as a parameter, and 
 var numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 ```
 
-## Calculate the Average
+### 4. Calculate the Average
 
 Calculating an average is an extremely common task.  Let's practice it a bit.
 
@@ -132,7 +143,7 @@ Calculating an average is an extremely common task.  Let's practice it a bit.
 1. Find the sum as we did in the first exercise
 2. Take the sum from step 1, and divide it by the number of elements in the list.
 
-### Level 1: Array of Numbers
+#### 4.1: Array of Numbers
 
 Write a function `averageNumbers` that receives an array of numbers and calculate the average of the numbers:
 
@@ -142,7 +153,7 @@ Write a function `averageNumbers` that receives an array of numbers and calculat
 var numbers = [2, 6, 9, 10, 7, 4, 1, 9];
 ```
 
-### Level 2: Array of Strings
+#### 4.2: Array of Strings
 
 Write a function `averageWordLength` that receives an array of words and calculate the average length of the words:
 
@@ -163,7 +174,7 @@ var words = [
 ];
 ```
 
-## Unique Arrays
+### 5. Unique Arrays
 
 Take the following array, remove the duplicates, and return a new array. You're more than likely going to want to check out the [`indexOf`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) function.
 
@@ -188,7 +199,7 @@ var words = [
 
 ```
 
-## Finding Elements
+### 6. Finding Elements
 
 Let's create a simple array search.
 
@@ -208,7 +219,7 @@ var words = [
 ];
 ```
 
-## Counting Repetion
+### 7. Counting Repetion
 
 Write a function `howManyTimes` that will take in an array of words as one argument, and a word to search for as the other. The function will return the number of times that word appears in the array.
 
@@ -230,11 +241,23 @@ var words = [
 ];
 ```
 
-## Bonus Quest
+### X. Bonus Quest
 
-In the 20×20 grid below; What is the greatest product of four adjacent numbers in the same direction (up, down, left, right)?
+What is the greatest product of four adjacent numbers? We consider adjacent any four numbers that are next to each other in `horizontal`, `vertical` o `diagonal`.
 
-Write a function `greatestProduct` to find the answer!
+For example, if we have a 5x5 Matrix like:
+
+```
+[ 1,  2, 3, 4, 5]
+[ 1, 20, 3, 4, 5]
+[ 1, 20, 3, 4, 5]
+[ 1, 20, 3, 4, 5]
+[ 1,  4, 3, 4, 5]
+```
+
+The greatest product will be the `20`x`20`x`20`x`4` = `32,000`;
+
+Write a function `greatestProduct` to find it in the 20×20 grid below!
 
 ```javascript
 var matrix = [
