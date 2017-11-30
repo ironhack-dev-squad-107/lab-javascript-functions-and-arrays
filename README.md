@@ -13,8 +13,6 @@ In this exercise you will apply:
 
 Manipulating arrays in code is a very common operation. Whether you're creating a total for a shopping cart, grabbing only the first names out of a list of people, or moving a piece on a chessboard, you're probably going to be modifying or manipulating an array in some way.
 
-Let's put this into practice. Use [https://repl.it/](https://repl.it/) to complete the following exercises with your partner.
-
 ## Requirements
 
 - [Fork this repo](https://guides.github.com/activities/forking/)
@@ -41,7 +39,7 @@ Software testing is a process of executing an application to validate and verify
 
 Testing is a process, not a single activity. So the process of designing tests early at the beginning of the development and the product's lifecycle can help to prevent deficiencies in the code or product design.
 
-In this exercise, we have created all the tests you need to create the solution, and you have to execute them all and create the code to accomplish all the requirements.
+W have created all the tests you need to create the solution, and you have to execute them all and create the code to accomplish all the requirements.
 
 Tests prove that your code actually works in every situation in which it’s designed to work. Even when you are improving the design or creating new features, you can change your current code without breaking what already works.
 
@@ -69,7 +67,7 @@ starter-code/
 └─ SpecRunner.html
 ```
 
-We will be working with the files inside the `src` folder. In the `jasmine` folder you can find all the files that compose Jasmine, that is already linked with the `SpecRunner.html` file.
+We will be working with the `functions-and-arrays.js` file inside the `src` folder. In the `jasmine` folder you can find all the files that compose Jasmine, that is already linked with the `SpecRunner.html` file.
 
 **Run tests**
 
@@ -81,9 +79,9 @@ Run the tests with Jasmine is super easy, you just have to open the `SpecRunner.
 
 You have to write your code on the `src/functions-and-arrays.js` file. Following the instructions, you should go step by step passing all the tests. 
 
-Don't rush to go through all of them at once, take your time to read carefully about what the iteration is asking you, and solve the errors one by one. 
+Do not rush to go through all of them at once, take your time to read carefully about what the iteration is asking you, and solve the errors one by one. 
 
-When coding with tests, is super important to read and understand the error we are having for each test, this way we will now what it expect from our code.
+When coding with tests, is super important to read and understand the errors we are having for each test, this way we will know what it expect from your code.
 
 ## Deliverables
 
@@ -91,11 +89,11 @@ All our work will be located in the `functions-and-arrays.js` file, so that will
 
 ## Find the maximum
 
-Define a function `maxOfTwoNumbers` that takes two numbers as arguments and returns the largest.
+Define a function `maxOfTwoNumbers` that takes two numbers as arguments and returns the largest. 
 
 ## Finding Longest Word
 
-Write a function `findLongestWord` that takes an array of words and returns the length of the longest one.
+Write a function `findLongestWord` that takes an array of words and returns the length of the longest one. If there are 2 with the same length, it should return the first occurrence. 
 
 **Starter Code**
 
