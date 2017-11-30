@@ -69,7 +69,7 @@ starter-code/
 └─ SpecRunner.html
 ```
 
-We are going to be working with the files inside the `src` folder. In the `jasmine` folder you can find all the files that compose Jasmine, that is already linked with the `SpecRunner.html` file.
+We will be working with the files inside the `src` folder. In the `jasmine` folder you can find all the files that compose Jasmine, that is already linked with the `SpecRunner.html` file.
 
 **Run tests**
 
