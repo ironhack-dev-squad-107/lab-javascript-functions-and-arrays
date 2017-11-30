@@ -1,5 +1,9 @@
-{
-    "extends" : "airbnb-base/legacy",
+{  
+    "plugins": [ "jasmine" ],
+    "env": {
+        "jasmine": true
+    },
+    "extends" : ["airbnb-base/legacy", "plugin:jasmine/recommended"],
     "rules": {
         "func-names": "off",
         "no-alert": "off",
@@ -7,22 +11,6 @@
         "no-plusplus": "off",
         "no-unused-vars": "warn",
         "vars-on-top": "off",
-        "no-multi-spaces": "off",
-        "no-octal": "off"
+        "no-multi-spaces": "off"
     }
 }
-
-// {
-//     "extends" : "airbnb-base/legacy",
-//     "plugins": [ "jasmine" ],
-//     "env": {
-//         "jasmine": true
-//     },
-//     "rules": {
-//         "func-names": "off",
-//         "no-alert": "off",
-//         "no-console": "off",
-//         "no-plusplus": "off",
-//         "no-unused-vars": "warn",
-//         "vars-on-top": "off"
-//     }
