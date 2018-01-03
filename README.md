@@ -48,7 +48,7 @@ Software testing is a process of executing an application to validate and verify
 
 Testing is a process, not a single activity. So the process of designing tests early at the beginning of the development and the product's lifecycle can help to prevent deficiencies in the code or product design.
 
-W have created all the tests you need to create the solution, and you have to execute them all and create the code to accomplish all the requirements.
+We have created all the tests you need to create the solution, and you have to execute them all and create the code to accomplish all the requirements.
 
 Tests prove that your code actually works in every situation in which it’s designed to work. Even when you are improving the design or creating new features, you can change your current code without breaking what already works.
 
